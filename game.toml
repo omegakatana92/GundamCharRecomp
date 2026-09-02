@@ -1,0 +1,31 @@
+[game]
+name = "GundamChar"
+id = "SLPS-01724"
+exe = "input/SLPS_017.24"
+disc = "disc/Mobile Suit Gundam - Char's Counterattack (Japan).cue"
+load_address = "0x80010000"
+entry_pc = "0x8002E170"
+text_size = "0x00050800"
+stack_base = "0x801FFFF0"
+
+[recompiler]
+seeds = "seeds/functions.txt"
+strict = true
+out_dir = "generated"
+
+[runtime]
+window_title = "Gundam Char's Counterattack Recompiled"
+bios_hle = false
+openbios = true
+overlay_cache = true
+
+[video]
+renderer = "software"
+
+[prepare_disc]
+track_01_sha1 = "3fccc3207028672e877083b374cb79bc018cf1ce"
+track_01_md5 = "dbff2a087f841085a31a7523013bed5b"
+track_01_size = 685170528
+
+[netplay]
+require_cue = true
